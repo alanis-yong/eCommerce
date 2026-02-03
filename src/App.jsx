@@ -40,7 +40,7 @@ export function Layout() {
 export default function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+     <BrowserRouter basename="/eCommerce">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
