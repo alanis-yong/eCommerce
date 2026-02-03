@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import CartItem from '../components/CartItem';
 
 export default function Cart() {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart.items || state.cart);
   let subtotal = 0;
 
   cart.forEach((item) => {
