@@ -10,7 +10,11 @@ export default function Item({ item }) {
   }
   return (
     <Card>
-      <Card.Img variant="top" src={item.image} alt={item.name} />
+      <Card.Img 
+        variant="top" 
+        src={item.image} 
+        style={{ height: '200px', objectFit: 'cover' }} 
+      />
       <Card.Body>
         <Card.Title>{item.name}</Card.Title>
         <Card.Text>
