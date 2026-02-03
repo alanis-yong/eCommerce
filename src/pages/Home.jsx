@@ -1,15 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Item from '../components/Item';
+import penImg from '../assets/pen.jpg'; 
+import laptopImg from '../assets/laptop.jpg';
+import iphoneImg from '../assets/iphone.jpg';
 
 const items = [
-  { id: 1, name: 'Pen', description: "It's a pen", price: 'RM10' },
-  {
-    id: 2,
-    name: 'Laptop',
-    description: "I think it's a laptop",
-    price: 'RM1200',
-  },
-  { id: 3, name: 'iPhone 2', description: 'Might be iPhone 3', price: 'RM30' },
+  { id: 1, name: 'Pen', price: 10, image: penImg },
+  { id: 2, name: 'Laptop', price: 1000, image: laptopImg },
+  { id: 3, name: 'iPhone', price: 500, image: iphoneImg },
 ];
 
 export default function Home() {
