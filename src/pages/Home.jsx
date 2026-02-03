@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Item from '../components/Item';
 import penImg from '../assets/pen.jpg'; 
-import laptopImg from '../assets/laptop.jpg';
+import laptopImg from '../assets/laptop.png';
 import iphoneImg from '../assets/iphone.jpg';
 
 const items = [
