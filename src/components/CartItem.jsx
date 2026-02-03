@@ -6,11 +6,7 @@ export default function CartItem({ item }) {
       <Card.Body>
         <Row>
           <Col xs={4} md={2}>
-            <Card.Img
-              variant="top"
-              src={`https://picsum.photos/id/${item.id}/200`}
-              alt={item.name}
-            />
+           <Card.Img variant="top" src={item.image} alt={item.name} />
           </Col>
           <Col xs={8} md={6}>
             <Card.Title>
