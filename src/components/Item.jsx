@@ -11,14 +11,23 @@ export default function Item({ item }) {
 
   return (
     <Card className="h-100 shadow-sm"> 
-      <div style={{ height: '200px', overflow: 'hidden' }}>
+      <div style={{ 
+        height: '200px', 
+        width: '100%', 
+        backgroundColor: '#f8f9fa', // Light gray background to fill the empty space
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center' 
+      }}>
         <Card.Img 
           variant="top" 
           src={item.image} 
           style={{ 
-            width: '100%', 
-            height: '100%', 
-            objectFit: 'cover' 
+            maxWidth: '100%', 
+            maxHeight: '100%', 
+            width: 'auto',  // Allows the image to keep its natural width
+            height: 'auto', // Allows the image to keep its natural height
+            objectFit: 'contain' // Shows the WHOLE image
           }} 
         />
       </div>
